@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Изменить валюту</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="screen">
+      <div class="container">
+        <header class="topbar">
+          <button class="topbar__back" data-action="back" aria-label="Назад">
+            ←
+          </button>
+          <h1 class="topbar__title">Изменить валюту</h1>
+          <div class="topbar__spacer"></div>
+        </header>
+
+        <div class="search">
+          <span class="search__icon">🔍</span>
+          <input
+            class="search__input"
+            id="search"
+            type="text"
+            placeholder="Search currency..."
+            autocomplete="off"
+          />
+          <button class="search__clear" id="searchClear" aria-label="Очистить">
+            ×
+          </button>
+        </div>
+
+        <ul class="currency-list" id="list"></ul>
+      </div>
+    </div>
+    <script src="./src/storage.js"></script>
+    <script src="./src/shared.js"></script>
+    <script src="./src/script/select.js"></script>
+  </body>
+</html>

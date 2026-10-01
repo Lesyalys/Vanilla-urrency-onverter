@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Конвертер валют</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="screen">
+      <h1 class="title">Конвертер валют</h1>
+
+      <div class="card card--result">
+        <div class="card__head" data-open="from">
+          <div>
+            <div class="card__code" id="fromCode"></div>
+            <div class="card__name" id="fromName"></div>
+          </div>
+          <div class="card__chevron">›</div>
+        </div>
+        <div class="card__value" id="fromValue">0 ₽</div>
+      </div>
+
+      <div class="card card--active">
+        <div class="card__head" data-open="to">
+          <div>
+            <div class="card__code" id="toCode"></div>
+            <div class="card__name" id="toName"></div>
+          </div>
+          <div class="card__chevron">›</div>
+        </div>
+        <div class="card__value" id="toValue">0 $</div>
+      </div>
+
+      <div class="keyboard" id="keyboard">
+        <button class="key key--zero key--action" data-key="clear">AC</button>
+        <button class="key key--action" data-key="backspace">⌫</button>
+        <button class="key" data-key="7">7</button>
+        <button class="key" data-key="8">8</button>
+        <button class="key" data-key="9">9</button>
+        <button class="key" data-key="4">4</button>
+        <button class="key" data-key="5">5</button>
+        <button class="key" data-key="6">6</button>
+        <button class="key" data-key="1">1</button>
+        <button class="key" data-key="2">2</button>
+        <button class="key" data-key="3">3</button>
+        <button class="key key--zero" data-key="0">0</button>
+        <button class="key" data-key=",">,</button>
+      </div>
+    </div>
+
+    <script src="./src/storage.js"></script>
+    <script src="./src/shared.js"></script>
+    <script src="./src/script/home.js"></script>
+  </body>
+</html>
