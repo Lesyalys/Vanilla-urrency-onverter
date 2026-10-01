@@ -66,5 +66,7 @@ loadRates().then((data) => {
   if (!CURRENCIES[state.from]) state.from = "USD";
   if (!CURRENCIES[state.to]) state.to = "RUB";
 
+  setState({ from: state.from, to: state.to, input: state.input });
+
   render();
 });
