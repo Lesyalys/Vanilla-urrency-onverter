@@ -3,7 +3,6 @@ const searchInput = document.getElementById("search");
 const searchClear = document.getElementById("searchClear");
 const backBtn = document.querySelector('[data-action="back"]');
 
-const field = sessionStorage.getItem("editingField");
 const editingField = sessionStorage.getItem("editingField") || "from";
 const selectedFrom = localStorage.getItem("from") || "USD";
 const selectedTo = localStorage.getItem("to") || "RUB";
